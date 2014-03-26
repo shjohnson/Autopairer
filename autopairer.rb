@@ -19,9 +19,9 @@ class Autopairer
 
 	def each_pair
 		@list_of_people.shuffle!
-		@list_of_people.each { |pair| print pair + " " + @list_of_people.pop + "\n"}
-		end
+		@list_of_people.each { |person| print person + " " + @list_of_people.pop + "\n"}
 	end
+end
 Autopairer.new.each_pair
 
 
